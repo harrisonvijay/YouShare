@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Sen");
+html {
+  background-color: #a1dffb;
+  color: #c33124;
+  font-family: "Sen";
+  font-size: 1.2rem;
+}
+
+h1 {
+  margin: 10px;
+}
+
+form * {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+  color: #c33124;
+  font-size: 1rem;
+  min-width: 280px;
+  outline: none;
+  border: none;
+}
+
+input:hover {
+  background-color: rgb(196, 195, 195);
+}
+
+button {
+  width: 300px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  background-color: #c33124;
+  color: white;
+  font-size: 1rem;
+  font-family: "Sen";
+}
+
+button:hover {
+  background-color: #f98365;
+}
+
+button:disabled {
+  background-color: rgb(196, 195, 195);
+}
+
+p {
+  padding: 10px;
+}
+
+.center-msg {
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  min-height: 100px;
+  min-width: 400px;
+  line-height: 100px;
+  font-size: 1.2rem;
+}

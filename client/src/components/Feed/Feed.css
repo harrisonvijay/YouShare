@@ -1,0 +1,13 @@
+.feed {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.empty-feed * {
+  color: #c33124;
+}
+
+.empty-feed *:hover {
+  color: #f98365;
+}

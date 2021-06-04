@@ -1,0 +1,27 @@
+.auth {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: fit-content;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset black;
+}
+
+.error {
+  padding: 10px;
+  background-color: #f98365;
+  max-width: 280px;
+  margin: auto;
+  overflow-wrap: normal;
+}
+
+button span {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}

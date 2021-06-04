@@ -1,0 +1,49 @@
+.create-post-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+select {
+  width: 300px;
+  background-color: #c33124;
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  margin: 10px;
+  min-height: 40px;
+  font-size: 1rem;
+}
+
+select:hover {
+  background-color: #f98365;
+}
+
+.chosen-img {
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
+}
+
+textarea {
+  font-family: "Sen";
+  resize: none;
+  background-color: white;
+  color: #c33124;
+  font-size: 1rem;
+  min-width: 280px;
+  outline: none;
+  border: none;
+}
+
+textarea:hover {
+  background-color: rgb(196, 195, 195);
+}

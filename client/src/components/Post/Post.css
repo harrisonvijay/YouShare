@@ -1,0 +1,86 @@
+.post {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
+  min-width: 320px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.post button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: #c33124;
+}
+
+.post button:hover {
+  color: #f98365;
+}
+
+.post * {
+  display: inline-block;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post-img {
+  object-fit: contain;
+  height: 280px;
+  width: 280px;
+}
+
+.post-content,
+.post-content * {
+  text-align: center;
+}
+
+.post-content p {
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 280px;
+}
+
+.post-header {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-header * {
+  font-size: 0.9rem;
+}
+
+#react-confirm-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  border: solid 2px #c33124;
+}
+
+.react-confirm-alert-button-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.react-confirm-alert-button-group button {
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+}
