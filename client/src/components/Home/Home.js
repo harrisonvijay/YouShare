@@ -8,6 +8,7 @@ import { signout } from "../../actions/auth";
 import { getPosts } from "../../actions/posts";
 import { getUser } from "../../actions/user";
 import LoadScreen from "../LoadScreen/LoadScreen";
+import "../Signin/Signin.css";
 
 const Home = () => {
     const history = useHistory();
@@ -26,7 +27,9 @@ const Home = () => {
     const Logout = () => {
         setTimeout(() => dispatch(signout(history)), 500);
         return (
-            <LoadScreen title="Signing out" />
+            <div className="auth-container">
+                <LoadScreen title="Signing out" />
+            </div>
         );
     }
 

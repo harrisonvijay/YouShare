@@ -10,7 +10,7 @@ const Navbar = () => {
             <div>
                 <h1>YouShare</h1>
             </div>
-            <div >
+            <div id="links">
                 <div className="navitem">
                     <Link to="/">Feed</Link>
                 </div>

@@ -1,13 +1,15 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .create-post-form {
   background-color: white;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
   width: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -46,4 +48,57 @@ textarea {
 
 textarea:hover {
   background-color: rgb(196, 195, 195);
+}
+
+@media screen and (max-width: 450px) {
+  textarea {
+    min-width: 240px;
+  }
+
+  .chosen-img {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .create-post-form {
+    max-width: 280px;
+  }
+
+  textarea {
+    min-width: 200px;
+  }
+
+  .chosen-img {
+    height: 200px;
+    width: 200px;
+  }
+
+  select {
+    width: 260px;
+  }
+
+  button {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .create-post-form {
+    max-width: 250px;
+  }
+
+  .chosen-img {
+    height: 240px;
+    width: 240px;
+  }
+
+  select {
+    width: 230px;
+  }
+
+  button {
+    width: 230px;
+  }
 }

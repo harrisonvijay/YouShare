@@ -58,47 +58,49 @@ const Form = () => {
     }
 
     return (
-        <div className="create-post-form">
-            <h1>{postId ? "Edit Post" : "Create Post"}</h1>
-            <form onSubmit={submitHandler}>
-                <select defaultValue={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value, content: "", image: null })}>
-                    <option value="text">Text</option>
-                    <option value="image">Image</option>
-                </select> <br />
-                {formData.type === "text" ? (
-                    <>
-                        <textarea
-                            name="content"
-                            placeholder="Enter Text"
-                            value={formData.content}
-                            onChange={(e) => setFormData({ ...formData, content: e.target.value })}
-                            rows={2}
-                            maxLength={280}
-                        ></textarea><br />
-                    </>
-                ) : (
-                    <>
-                        {formData.image && <img className="chosen-img" src={formData.image} alt=""></img>}
-                        <br />
-                        <ImageInputBase64
-                            pickerText="Choose Image"
-                            name="image"
-                            onDone={(image) => setFormData({ ...formData, image: image })}
-                        /><br />
-                        <textarea
-                            name="caption"
-                            placeholder="Enter Caption"
-                            value={formData.caption}
-                            onChange={(e) => setFormData({ ...formData, caption: e.target.value })}
-                            rows={2}
-                            maxLength={80}
-                        ></textarea><br />
-                    </>
-                )
-                }
+        <div className="form-container">
+            <div className="create-post-form">
+                <h1>{postId ? "Edit Post" : "Create Post"}</h1>
+                <form onSubmit={submitHandler}>
+                    <select defaultValue={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value, content: "", image: null })}>
+                        <option value="text">Text</option>
+                        <option value="image">Image</option>
+                    </select> <br />
+                    {formData.type === "text" ? (
+                        <>
+                            <textarea
+                                name="content"
+                                placeholder="Enter Text"
+                                value={formData.content}
+                                onChange={(e) => setFormData({ ...formData, content: e.target.value })}
+                                rows={2}
+                                maxLength={280}
+                            ></textarea><br />
+                        </>
+                    ) : (
+                        <>
+                            {formData.image && <img className="chosen-img" src={formData.image} alt=""></img>}
+                            <br />
+                            <ImageInputBase64
+                                pickerText="Choose Image"
+                                name="image"
+                                onDone={(image) => setFormData({ ...formData, image: image })}
+                            /><br />
+                            <textarea
+                                name="caption"
+                                placeholder="Enter Caption"
+                                value={formData.caption}
+                                onChange={(e) => setFormData({ ...formData, caption: e.target.value })}
+                                rows={2}
+                                maxLength={80}
+                            ></textarea><br />
+                        </>
+                    )
+                    }
 
-                <button type="submit" disabled={!(formData.image !== null || formData.content !== "")}>Post</button>
-            </form >
+                    <button type="submit" disabled={!(formData.image !== null || formData.content !== "")}>Post</button>
+                </form>
+            </div>
         </div>
     )
 }

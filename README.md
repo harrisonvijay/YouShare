@@ -12,7 +12,6 @@
 
 ### Upcoming features
 
-- Mobile Responsiveness
 - Comments
 - Profiles, Ability to follow users
 - Search by User and Tag

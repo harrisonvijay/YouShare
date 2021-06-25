@@ -54,7 +54,7 @@ const Signin = () => {
 
 
     return (
-        <>
+        <div className="auth-container">
             {!load && (
                 <div className="auth">
                     <h1>YouShare</h1>
@@ -77,7 +77,7 @@ const Signin = () => {
                 </div>
             )}
             {load && <LoadScreen title="Signing in" />}
-        </>);
+        </div>);
 }
 
 export default Signin;

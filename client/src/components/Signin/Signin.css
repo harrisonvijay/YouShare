@@ -1,21 +1,25 @@
 .auth {
   background-color: aliceblue;
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   width: fit-content;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: inset black;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .error {
   padding: 10px;
   background-color: #f98365;
-  max-width: 280px;
+  max-width: 250px;
   margin: auto;
   overflow-wrap: normal;
 }
@@ -24,4 +28,51 @@ button span {
   font-size: 1rem;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .auth {
+    max-width: 280px;
+  }
+
+  form {
+    width: 280px;
+  }
+
+  input {
+    min-width: 240px;
+    max-width: 240px;
+  }
+
+  select {
+    width: 260px;
+  }
+
+  button {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .auth {
+    max-width: 250px;
+  }
+
+  form {
+    width: 250px;
+  }
+
+  input {
+    min-width: 210px;
+    max-width: 210px;
+    font-size: 0.8rem;
+  }
+
+  select {
+    width: 230px;
+  }
+
+  button {
+    width: 230px;
+  }
 }

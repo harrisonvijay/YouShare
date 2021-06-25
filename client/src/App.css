@@ -4,6 +4,19 @@ html {
   color: #c33124;
   font-family: "Sen";
   font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -55,14 +68,13 @@ p {
 .center-msg {
   background-color: white;
   border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   text-align: center;
   padding: 20px;
-  min-height: 100px;
-  min-width: 400px;
-  line-height: 100px;
+  margin: 10px;
   font-size: 1.2rem;
+  word-wrap: break-word;
 }

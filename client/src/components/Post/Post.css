@@ -64,9 +64,17 @@
 
 #react-confirm-alert {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.react-confirm-alert-overlay {
+  max-width: 300px;
   text-align: center;
   border-radius: 20px;
   padding: 20px;
@@ -76,11 +84,29 @@
 
 .react-confirm-alert-button-group {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: stretch;
 }
 
 .react-confirm-alert-button-group button {
   padding: 10px;
   margin: 10px;
-  width: 150px;
+}
+
+@media screen and (max-width: 400px) {
+  .post {
+    min-width: 250px;
+  }
+
+  .post-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .post-content p {
+    max-width: 250px;
+  }
+
+  .react-confirm-alert-overlay {
+    max-width: 200px;
+  }
 }

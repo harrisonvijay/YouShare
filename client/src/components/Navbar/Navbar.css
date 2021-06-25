@@ -44,3 +44,22 @@
 .divider {
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 880px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .divider {
+    display: none;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

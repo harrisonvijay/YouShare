@@ -63,7 +63,7 @@ const Post = ({ post }) => {
                     <button onClick={() => dispatch(likePost(post.postId))}>
                         {post.likes.find((userId) => (userId === userData.id)) ? <FontAwesomeIcon icon={heartSolid} /> : <FontAwesomeIcon icon={heartOutline} />}
                     </button>
-                    <span>{post.likes.length > 0 && (post.likes.length === 1 ? "1 like" : post.likes.length + " likes")}</span>
+                    <span>{post.likes.length > 0 && post.likes.length}</span>
                 </div>
                 {post.userId === userData.id && (
                     <button className="special-btn" onClick={editClickHandler}>
